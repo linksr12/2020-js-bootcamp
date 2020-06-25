@@ -1,0 +1,23 @@
+{
+  "name": "2020-js-bootcamp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/linksr12/2020-js-bootcamp.git"
+  },
+  "keywords": [
+    "node",
+    "nodejs"
+  ],
+  "author": "Jorge de lara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/linksr12/2020-js-bootcamp/issues"
+  },
+  "homepage": "https://github.com/linksr12/2020-js-bootcamp#readme"
+}
