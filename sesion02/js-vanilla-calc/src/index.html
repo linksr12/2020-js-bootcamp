@@ -1,18 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cc/style.css">
-    <title>JS Bootcamp</title>
+<!DOCTYPE html><!--Especifica que es html5-->
+<html lang="es">
+<head><!--Cabecera principal html-->
+    <meta charset="UTF-8"><!--Atributo para reconocer signos especiales-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Atributo por defecto para escalar-->
+    <link rel="stylesheet" href="cc/style.css"><!--Esta linea crea un vinculo local hacia el archivo css-->
+    <title>JS Bootcamp</title><!--Titulo de la pagina-->
 </head>
 
-<body>
-  <section>
-    <h1>Calculadora</h1>
-    <h2>JS Bootcamp 2020</h2>
+<body><!--Cuerpo-->
+  <section><!--Se puede divir el cuerpo mediante secciones-->
+      <h1>Calculadora</h1><!--Encabezado mas grande-->
+      <h2>JS Bootcamp 2020</h2><!--Encabezado-->
+      <main><!--Seccion principal-->
+        <section>
+          <p></p>
+          <input type="text" name="primer_numero" id="primer_numero" placeholder="Numero 1"><!--p+input:text Inserta una seccion de datos-->
+        </section>
+        <section>
+          <p></p>
+          <input type="text" name="primer_numero" id="primer_numero" placeholder="Numero 2">
+        </section>
+        <section>
+          <button id="sum-button">+</button><!--Exibe un boton para el usuario de nombre + y ademas damos una marca de agua-->
+          <button id="res-button">-</button><!--Operaciones-->
+          <button id="mul-button">*</button>
+          <button id="div-button">/</button>
+        </section>
+        <section id="result">
+          <p>El resultado es:</p>
+        </section>
+      </main>
   </section>
-<script src="js/script.js"></script>
+<script src="js/script.js"></script><!--Por motivos de rendimiento la relacion de Javascript se pone al final-->
 </body>
 
 </html>
