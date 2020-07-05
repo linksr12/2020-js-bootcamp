@@ -76,28 +76,11 @@ proButton.addEventListener('click', function () {
     return result
 })
 //division
-//resta
 divButton.addEventListener('click', function () {
-    //Numeros tranformados a enteros
-    const n1Int = parseInt(n1.value)
-    const n2Int = parseInt(n2.value)
-
-    //operacion 
-    const result = n1Int / n2Int
-    console.log(result)
-
-    //creacion de nodo<span>{resultado}<span>
-    const textContent = document.createTextNode(result)
-    const spanElement = document.createElement('span')
-    spanElement.appendChild(textContent)
-
-    //eliminamos resultado previo
-    if (resultNode.childNodes.length > 3) {
-        resultNode.removeChild(resultNode.childNodes[3])
+    const numero1=parseInt(n1.value)
+    const numero2=parseInt(n2.value)
+    
+    if(n1===null){
+        console.log("no respondo")
     }
-    resultNode.appendChild(spanElement)
-    return result
-})
-title.addEventListener('click', function () {
-    console.log('Click sobre el titulo')
 })
