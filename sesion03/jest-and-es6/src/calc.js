@@ -1,10 +1,7 @@
+export const sum = (a, b) => {
+    return a + b
+}
 
-function sum(a,b){
-    return a+b
-}
-function resta(a,b){
-    return a-b
-}
-module.exports={
-    suma:sum
+export const diff = (a, b) => {
+    return a - b
 }
