@@ -26,3 +26,11 @@ $ npm i -D sass sass-loader style-loader css-loader
 '''sh
 $ npm i -D @fontawesome/fontawesome-free 
 '''
+### needs
+
+'''Sass file in extension .scss and .sass, we need to call with webpack directly in index.js'''
+
+### Html and sass files are converted in .js output
+'''We need install bulma with
+$ npm install bulma
+'''
