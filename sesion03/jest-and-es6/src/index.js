@@ -1,5 +1,6 @@
-const calc = require('./calc')
+import{sum} from '.calc';
+//const calc = require('./calc')
 
-const res = calc.suma(3, 6)
+const res = calc.sum(3, 6)
 
 console.log(res)
