@@ -12,8 +12,10 @@ module.exports = {//We start webpack modules
     },
     plugins: [//This is an array to run every plugin.
         new CleanWebpackPlugin(),
-        new HtmlWebpackPlugin({ template: './src/index.html',
-    })
+        new HtmlWebpackPlugin({ template: './src/index.html' }),
+        new HtmlWebpackPlugin({ 
+            template: './src/dashboard.html', filename: 'dashboard.html' })
+            
     ],
     module: {//We read sass files to get output .js adding sass code.
         rules: [
