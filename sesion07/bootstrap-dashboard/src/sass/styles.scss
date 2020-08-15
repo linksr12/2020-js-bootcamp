@@ -1,0 +1,10 @@
+@charset "utf-8";
+//@import "~bootstrap/scss/bootstrap.scss";
+@import "~bootstrap";
+
+.container .row:nth-child(1){
+    min-height: 5rem;
+}
+.container .row:nth-child(4) .card{
+    min-height: 28rem;
+}

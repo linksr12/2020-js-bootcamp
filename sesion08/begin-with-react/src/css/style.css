@@ -1,0 +1,41 @@
+/* https://color.adobe.com/es/explore */
+*{
+    --primary: #07038C;
+    --background-color: #0439D9;
+}
+body{
+    background-color: var(--background-color);
+    color: whitesmoke;
+    font-family: 'Baloo Tamma 2', cursive;
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    max-width: 21rem;
+    background-color: beige;
+    font-size: large;
+    margin-left: 3rem;
+}
+nav ul li{
+    padding: .3rem .9rem;
+}
+nav ul li a{
+    display: inline-block;
+    min-width: 15rem;
+    background-color: azure;
+    color: gray;
+    border: .1rem solid rgb(9, 89, 164);
+    border-radius: .3rem;
+    padding: .6rem .9rem;
+    text-decoration: none;
+    margin-left: .6rem;
+}
+nav ul li a:hover{
+    background-color: rgb(9, 89, 164);
+    color: white;
+}
