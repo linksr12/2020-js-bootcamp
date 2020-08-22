@@ -25,12 +25,17 @@
         small {
             color: grey;
         }
+
+        a {
+            color: white;
+            margin-left: 3rem;
+        }
     </style>
 </head>
 
 <body>
-    <div id="root"></div>
     <a onclick="window.history.back()">Go Back</a>
+    <div id="root"></div>
 
     <script type="text/babel">
         const ReactComponent = () => {
@@ -47,16 +52,23 @@
                     <InnerComponent
                         title="3. Confronting Bias: Thriving Across Our Differences"
                         subtitle="By: Verna Myers and Arianna Huffington" />
+                    <ShowMoreComponent label="Show more..." />
                 </div>
             )
         }
-        const InnerComponent = ({ title, subtitle }) => {
+        const InnerComponent = (props) => {
+            const { title, subtitle } = props
             return (
                 <div>
                     <h3>{title}</h3>
                     <small>{subtitle}</small>
                 </div>
             )
+        }
+        class ShowMoreComponent extends React.Component {
+            render() {
+                return <a href="#">{this.props.label}</a>
+            }
         }
 
 

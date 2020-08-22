@@ -43,7 +43,7 @@
                 date: new Date()
             }
             _tick() {
-                this.setState({
+                this.setstate({
                     date: new Date()
                 })
             }
@@ -57,7 +57,18 @@
                 clearInterval(this.timerID)
             }
             render() {
-                return <a href="#">{this.state.date.toISOString()}</a>
+                return(
+                 <div>
+                        <h3>Event Listener Challenge (Handler)</h3>
+                        <div>
+                            <button onClick={this.handleClick1}>[incrementar]</button>
+                            <button onClick={(e) => this.handleClick2(e)}>[decrementar]</button>
+                            <button onClick={(e) => this.handleClick3('Handle Click 3', e)}>[incrementar*2]</button>
+                            <button onClick={(e) => this.handleClick3('Handle Click 3', e)}>[derementar*2]</button>
+
+                        </div>
+                    </div>
+                ) 
             }
         }
 
